@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "757d79f2-5b23-46e9-aefb-8fb79924ced5",
+		"name": "Country",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29903606"
+	},
+	"item": [
+		{
+			"name": "Create Country",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "paco",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "breend",
+							"value": "shitzu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_Country",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Country_By_Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Country",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Country",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
