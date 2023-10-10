@@ -12,34 +12,23 @@
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "paco",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "8",
-							"type": "text"
-						},
-						{
-							"key": "breend",
-							"value": "shitzu",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\r\n   \"Nombre\": \"Argentina\",\r\n   \"Capital\": \"Buenos Aires\",\r\n   \"Edad\": 211,\r\n   \"EsIndependiente\": true,\r\n   \"ComidasTipicas\": [{\"Nombre\": \"Asado\"}, {\"Nombre\": \"Empanadas\"}, {\"Nombre\": \"Milanesa\"}],\r\n   \"Poblacion\": 45195777,\r\n   \"Presidente\": \"Alberto Fernández\",\r\n   \"Continente\": \"América del Sur\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/pets",
+					"raw": "http://localhost:3000/Country",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"pets"
+						"Country"
 					]
 				}
 			},
@@ -49,7 +38,18 @@
 			"name": "Listar_Country",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Country",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Country"
+					]
+				}
 			},
 			"response": []
 		},
@@ -57,23 +57,68 @@
 			"name": "Get_Country_By_Id",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Country/a02bfeae-2c23-4a15-a823-9fcc09494d04",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Country",
+						"a02bfeae-2c23-4a15-a823-9fcc09494d04"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Update_Country",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Colombia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Country/016f7ef1-7b67-44f4-b29a-3fa9e97c3c58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Country",
+						"016f7ef1-7b67-44f4-b29a-3fa9e97c3c58"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Delete_Country",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Country/41213083-61be-472b-a60b-54929057ad9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Country",
+						"41213083-61be-472b-a60b-54929057ad9f"
+					]
+				}
 			},
 			"response": []
 		}
